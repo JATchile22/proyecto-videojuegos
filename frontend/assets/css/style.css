@@ -1,0 +1,101 @@
+/* Estilo general: Fondo negro puro y fuente en blanco nítido */
+body {
+    background-color: #0b0f0b;
+    color: #ffffff; /* Texto general en blanco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #050805 !important;
+    border-bottom: 2px solid #00ff66;
+}
+
+header h1 {
+    color: #00ff66;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+}
+
+header p.lead {
+    color: #ffffff; /* Subtítulo en blanco */
+    font-weight: 500;
+}
+
+/* Contenedor principal con líneas verticales a los lados */
+main.container {
+    background-color: #111711;
+    border-left: 2px solid #1e3a1e;
+    border-right: 2px solid #1e3a1e;
+    min-height: 75vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Buscador y selectores con texto blanco */
+.form-control, .form-select {
+    background-color: #182218;
+    border: 1px solid #2e522e;
+    color: #ffffff !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #182218;
+    color: #ffffff !important;
+    border-color: #00ff66;
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 102, 0.25);
+}
+
+.form-control::placeholder {
+    color: #b0c4b0; /* Placeholder un poco más claro */
+}
+
+/* Tarjetas de los videojuegos */
+.card {
+    background-color: #141c14;
+    border: 1px solid #233823;
+    transition: transform 0.2s ease-in-out, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #00ff66;
+    box-shadow: 0 4px 15px rgba(0, 255, 102, 0.15);
+}
+
+/* Títulos de los juegos en BLANCO brillante para que destaquen */
+.card-title {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+/* Descripciones de los juegos en blanco suave */
+.card-text {
+    color: #d1d5db !important;
+}
+
+/* Badges de categoría (fondo verde oscuro con texto blanco) */
+.badge.bg-primary {
+    background-color: #1a4d2e !important;
+    color: #ffffff !important;
+    border: 1px solid #00ff66;
+    font-weight: 600;
+}
+
+/* Precios en verde brillante resaltado */
+.text-success {
+    color: #00ff66 !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Pie de página */
+footer {
+    color: #00ff66 !important;
+    background-color: #050805 !important;
+    border-top: 1px solid #00ff66;
+}
